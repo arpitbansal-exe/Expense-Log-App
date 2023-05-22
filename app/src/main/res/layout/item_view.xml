@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E91E63"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="28dp"
+            android:background="#E91E63"
+            />
+
+        <TextView
+            android:id="@+id/dateview"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:text="Date" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="28dp"
+            android:background="#E91E63"
+            />
+
+        <TextView
+            android:id="@+id/desview"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dateview"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:text="Description" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="28dp"
+            android:background="#E91E63"
+            />
+
+        <TextView
+            android:id="@+id/amtview"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginEnd="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:text="Amount" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="28dp"
+            android:background="#E91E63"
+            android:layout_marginEnd="0dp"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#E91E63"
+     />
+</LinearLayout>

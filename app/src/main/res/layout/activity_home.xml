@@ -1,0 +1,163 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="Monthly Expense Log app"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/expenseAmountEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+
+    <EditText
+        android:id="@+id/expenseAmountEditText"
+        android:layout_width="306dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_currency_rupee_24"
+        android:drawablePadding="8dp"
+        android:hint="Expense Amount"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/expenseDescriptionEditText"
+        android:layout_width="318dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableLeft="@drawable/baseline_description_24"
+        android:drawablePadding="8dp"
+        android:hint="Expense description"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenseAmountEditText" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenseDescriptionEditText">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/white"
+                android:drawableLeft="@drawable/baseline_fastfood_24"
+                android:paddingLeft="15dp"
+                android:text="Food" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/white"
+                android:drawableLeft="@drawable/baseline_directions_bus_24"
+                android:paddingLeft="15dp"
+                android:text="Travel" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/white"
+                android:drawableLeft="@drawable/baseline_menu_book_24"
+                android:paddingLeft="15dp"
+                android:text="Study" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/custom_radio_selector"
+                android:button="@color/white"
+                android:drawableLeft="@drawable/baseline_fastfood_24"
+                android:paddingLeft="15dp"
+                android:text="Other" />
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:padding="16dp"
+        android:backgroundTint="#008080"
+        android:text="Add Expense"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenseDescriptionEditText"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/totalExpensesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:text="Updating Expenses"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseButton" />
+
+    <Button
+        android:id="@+id/view_expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#008080"
+        android:text="View Expenses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addExpenseButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336470549120",
+    "project_id": "expense-log-a7e8d",
+    "storage_bucket": "expense-log-a7e8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336470549120:android:7c03ddf641ccd075bf7c65",
+        "android_client_info": {
+          "package_name": "com.example.expenselog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336470549120-gt74kceu0bce0gfqqqak2anh2hqiprn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYnd_oSWybcq-Oim6W_mfNJ8G3WxFuvy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336470549120-gt74kceu0bce0gfqqqak2anh2hqiprn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
